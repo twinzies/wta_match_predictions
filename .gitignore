@@ -1,5 +1,6 @@
 # Local project files
 local_files/
+models/
 
 # Python bytecode and caches
 __pycache__/
