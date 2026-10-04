@@ -1,5 +1,6 @@
-model,precision,recall,f1,accuracy
-fcnn_basic,0.6313,0.6322,0.6317,0.6315
-rank_baseline,0.6317,0.6295,0.6306,0.6313
-bookmaker_baseline,0.6823,0.6967,0.6894,0.6862
-fcnn_expanded_features,0.6605,0.6407,0.6504,0.6557
+model,precision,recall,f1,accuracy,auc_roc
+logistic_regression,0.6313,0.6375,0.6344,0.6326,0.6796
+fcnn_expanded_features,0.6671,0.6591,0.6631,0.6651,0.7281
+fcnn_basic,0.6316,0.6322,0.6319,0.6317,0.6958
+rank_baseline,0.6317,0.6295,0.6306,0.6313,0.6992
+bookmaker_baseline,0.6823,0.6967,0.6894,0.6862,0.7587
