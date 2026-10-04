@@ -71,8 +71,8 @@ Results below come from [`output/summary.csv`](output/summary.csv). Experimental
 |---|---:|---:|---:|---:|---:|
 | Rank baseline | 63.13% | 0.6317 | 0.6295 | 0.6306 | 0.6992 |
 | Logistic regression | 63.26% | 0.6313 | 0.6375 | 0.6344 | 0.6796 |
-| FCNN — basic features | 63.17% | 0.6316 | 0.6322 | 0.6319 | 0.6958 |
-| **FCNN — expanded features** | **66.51%** | **0.6671** | **0.6591** | **0.6631** | **0.7281** |
+| FCNN (basic features) | 63.17% | 0.6316 | 0.6322 | 0.6319 | 0.6958 |
+| **FCNN (expanded features)** | **66.51%** | **0.6671** | **0.6591** | **0.6631** | **0.7281** |
 | Bookmaker baseline | 68.62% | 0.6823 | 0.6967 | 0.6894 | 0.7587 |
 
 The expanded FCNN is the strongest trained model in these results. It improves accuracy by **3.38 percentage points** over rank and **3.34 points** over the basic FCNN, but remains **2.11 points below** the bookmaker baseline. On these runs, adding historical information helped more than switching from logistic regression to a neural network with the same basic features. This indicates that models that can capture sequential patterns such as RNNs, LSTMs or Transformers may be well suited to the task - however, the research literature in this domain was found to be limited and often achieved performance metrics similar to the ones quoted in this project! 
