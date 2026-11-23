@@ -103,7 +103,7 @@ Open the notebooks in a Jupyter-compatible editor and run them with `src/` as th
 
 The neural-network notebooks select CUDA or Apple MPS when available, otherwise CPU. They also contain export cells for model weights and fitted preprocessing. 
 
-## If given more time, how would I improve the model?
+## Notes for Future Work
 
 1. **Strengthen dataset split creation strategies.** The learning curves produced by the FCNNs depict a gap in the loss achieved between the train and validation sets. This is likely because, owing to time constraints, I simply sorted the data in chronological order to make a logically valid test/train/validation split. Using walk-forward validation across several periods, compare recent-only training with the full history, and investigate whether older seasons dominate learning may help mitigate this oddity.
 2. **Elo ratings as a feature.** Computing pre-match Elo ratings have been useful in game outcome predictions in this domain and may prove to be a useful input feature for the model to have.
